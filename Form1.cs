@@ -26,7 +26,7 @@ namespace WindowsFormsApp12
             double b = Convert.ToDouble(textBox6.Text);
             double c = Convert.ToDouble(textBox7.Text);
             double x = x0;
-            while ( x <=(xk+Dx)/2)
+            while ( x <=xk)
             {
                 double y = (0.01 * b * c) / x + Math.Cos(Math.Sqrt(x * a * a * a));
                 textBox5.Text += "x=" + Convert.ToString(x) + "; y =" + Convert.ToString(y) + Environment.NewLine;
